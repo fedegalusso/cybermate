@@ -1,0 +1,42 @@
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.language-switcher:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.flag-icon {
+  font-size: 1.2rem;
+}
+
+.language-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Dark background variant for header */
+.header .language-switcher {
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.header .language-switcher:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}

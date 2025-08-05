@@ -1,6 +1,9 @@
+import { useLanguage } from "../context/LanguageContext";
 import "./Footer.css";
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -11,10 +14,7 @@ const Footer = () => {
                 <span className="logo-icon">🛡️</span>
                 <span className="logo-text">CyberMate</span>
               </div>
-              <p className="footer-description">
-                Your intelligent cybersecurity companion, powered by AI to
-                protect what matters most - your digital life.
-              </p>
+              <p className="footer-description">{t("footer.description")}</p>
               <div className="social-links">
                 <a href="#" aria-label="LinkedIn">
                   💼
@@ -33,73 +33,73 @@ const Footer = () => {
 
             <div className="footer-links">
               <div className="link-group">
-                <h4>Product</h4>
+                <h4>{t("footer.product")}</h4>
                 <ul>
                   <li>
-                    <a href="#features">Features</a>
+                    <a href="#features">{t("footer.product.features")}</a>
                   </li>
                   <li>
-                    <a href="#how-it-works">How It Works</a>
+                    <a href="#how-it-works">{t("footer.product.howItWorks")}</a>
                   </li>
                   <li>
-                    <a href="#">Pricing</a>
+                    <a href="#">{t("footer.product.pricing")}</a>
                   </li>
                   <li>
-                    <a href="#">Security</a>
+                    <a href="#">{t("footer.product.security")}</a>
                   </li>
                 </ul>
               </div>
 
               <div className="link-group">
-                <h4>Company</h4>
+                <h4>{t("footer.company")}</h4>
                 <ul>
                   <li>
-                    <a href="#team">About Us</a>
+                    <a href="#team">{t("footer.company.about")}</a>
                   </li>
                   <li>
-                    <a href="#">Careers</a>
+                    <a href="#">{t("footer.company.careers")}</a>
                   </li>
                   <li>
-                    <a href="#">Press</a>
+                    <a href="#">{t("footer.company.press")}</a>
                   </li>
                   <li>
-                    <a href="#">Partners</a>
+                    <a href="#">{t("footer.company.partners")}</a>
                   </li>
                 </ul>
               </div>
 
               <div className="link-group">
-                <h4>Resources</h4>
+                <h4>{t("footer.resources")}</h4>
                 <ul>
                   <li>
-                    <a href="#">Documentation</a>
+                    <a href="#">{t("footer.resources.documentation")}</a>
                   </li>
                   <li>
-                    <a href="#">Blog</a>
+                    <a href="#">{t("footer.resources.blog")}</a>
                   </li>
                   <li>
-                    <a href="#">Help Center</a>
+                    <a href="#">{t("footer.resources.help")}</a>
                   </li>
                   <li>
-                    <a href="#">Community</a>
+                    <a href="#">{t("footer.resources.community")}</a>
                   </li>
                 </ul>
               </div>
 
               <div className="link-group">
-                <h4>Legal</h4>
+                <h4>{t("footer.legal")}</h4>
                 <ul>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">{t("footer.legal.privacy")}</a>
                   </li>
                   <li>
-                    <a href="#">Terms of Service</a>
+                    <a href="#">{t("footer.legal.terms")}</a>
                   </li>
                   <li>
-                    <a href="#">Cookie Policy</a>
+                    <a href="#">{t("footer.legal.cookies")}</a>
                   </li>
                   <li>
-                    <a href="#">Compliance</a>
+                    <a href="#">{t("footer.legal.compliance")}</a>
                   </li>
                 </ul>
               </div>
@@ -107,32 +107,28 @@ const Footer = () => {
           </div>
 
           <div className="footer-newsletter">
-            <h4>Stay Protected</h4>
-            <p>
-              Get the latest cybersecurity insights and CyberMate updates
-              delivered to your inbox.
-            </p>
+            <h4>{t("footer.newsletter.title")}</h4>
+            <p>{t("footer.newsletter.description")}</p>
             <div className="newsletter-form">
               <input
                 type="email"
-                placeholder="Enter your email address"
+                placeholder={t("footer.newsletter.placeholder")}
                 className="newsletter-input"
               />
-              <button className="btn btn-primary">Subscribe</button>
+              <button className="btn btn-primary">
+                {t("footer.newsletter.subscribe")}
+              </button>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p className="copyright">
-              © 2025 CyberMate. All rights reserved. Built with ❤️ for a safer
-              digital world.
-            </p>
+            <p className="copyright">{t("footer.copyright")}</p>
             <div className="footer-badges">
-              <span className="badge">🔒 SOC 2 Compliant</span>
-              <span className="badge">🛡️ ISO 27001 Certified</span>
-              <span className="badge">🌍 GDPR Ready</span>
+              <span className="badge">{t("footer.badge.soc2")}</span>
+              <span className="badge">{t("footer.badge.iso")}</span>
+              <span className="badge">{t("footer.badge.gdpr")}</span>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from "../context/LanguageContext";
 import "./Team.css";
 
 const Team = () => {
@@ -7,44 +7,44 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Macarena Alvarez",
-      role: t('team.macarena.role'),
-      description: t('team.macarena.description'),
+      role: t("team.macarena.role"),
+      description: t("team.macarena.description"),
       expertise: [
         "Machine Learning",
         "Data Science",
         "AI Architecture",
         "Behavioral Analytics",
       ],
-      image: "/api/placeholder/300/300", // Placeholder - you can replace with actual image
-      linkedin: "#",
+      image: "/m-alvarez.jpeg", // Placeholder - you can replace with actual image
+      linkedin: "https://www.linkedin.com/in/macarena-alvarez-515486280/",
       github: "#",
     },
     {
       name: "Federico Galusso",
-      role: t('team.federico.role'),
-      description: t('team.federico.description'),
+      role: t("team.federico.role"),
+      description: t("team.federico.description"),
       expertise: [
         "Full-Stack Development",
         "System Architecture",
         "Cybersecurity",
         "Cloud Infrastructure",
       ],
-      image: "/api/placeholder/300/300", // Placeholder - you can replace with actual image
-      linkedin: "#",
+      image: "/f-galusso.jpg", // Placeholder - you can replace with actual image
+      linkedin: "https://www.linkedin.com/in/federico-galusso-rodriguez-3b5b4423b/",
       github: "#",
     },
     {
       name: "Mateo Seijo",
-      role: t('team.mateo.role'),
-      description: t('team.mateo.description'),
+      role: t("team.mateo.role"),
+      description: t("team.mateo.description"),
       expertise: [
         "Product Strategy",
         "UX Design",
         "Business Development",
         "Market Research",
       ],
-      image: "/api/placeholder/300/300", // Placeholder - you can replace with actual image
-      linkedin: "#",
+      image: "/m-seijo.jpeg", // Placeholder - you can replace with actual image
+      linkedin: "https://www.linkedin.com/in/mateoseijo/",
       github: "#",
     },
   ];
@@ -53,10 +53,8 @@ const Team = () => {
     <section id="team" className="team">
       <div className="container">
         <div className="section-title">
-          <h2>{t('team.title')}</h2>
-          <p className="section-subtitle">
-            {t('team.subtitle')}
-          </p>
+          <h2>{t("team.title")}</h2>
+          <p className="section-subtitle">{t("team.subtitle")}</p>
         </div>
 
         <div className="team-grid">
@@ -90,7 +88,7 @@ const Team = () => {
                 <p className="member-description">{member.description}</p>
 
                 <div className="member-expertise">
-                  <h4>{t('team.expertise')}</h4>
+                  <h4>{t("team.expertise")}</h4>
                   <div className="expertise-tags">
                     {member.expertise.map((skill, skillIndex) => (
                       <span key={skillIndex} className="expertise-tag">
@@ -105,39 +103,31 @@ const Team = () => {
         </div>
 
         <div className="team-values">
-          <h3>{t('team.mission.title')}</h3>
+          <h3>{t("team.mission.title")}</h3>
           <div className="values-grid">
             <div className="value-item">
               <span className="value-icon">🎯</span>
-              <h4>{t('team.value.innovation.title')}</h4>
-              <p>
-                {t('team.value.innovation.description')}
-              </p>
+              <h4>{t("team.value.innovation.title")}</h4>
+              <p>{t("team.value.innovation.description")}</p>
             </div>
             <div className="value-item">
               <span className="value-icon">🤝</span>
-              <h4>{t('team.value.collaboration.title')}</h4>
-              <p>
-                {t('team.value.collaboration.description')}
-              </p>
+              <h4>{t("team.value.collaboration.title")}</h4>
+              <p>{t("team.value.collaboration.description")}</p>
             </div>
             <div className="value-item">
               <span className="value-icon">🔒</span>
-              <h4>{t('team.value.privacy.title')}</h4>
-              <p>
-                {t('team.value.privacy.description')}
-              </p>
+              <h4>{t("team.value.privacy.title")}</h4>
+              <p>{t("team.value.privacy.description")}</p>
             </div>
           </div>
         </div>
 
         <div className="join-team">
           <div className="join-content">
-            <h3>{t('team.join.title')}</h3>
-            <p>
-              {t('team.join.description')}
-            </p>
-            <button className="btn btn-primary">{t('team.join.button')}</button>
+            <h3>{t("team.join.title")}</h3>
+            <p>{t("team.join.description")}</p>
+            <button className="btn btn-primary">{t("team.join.button")}</button>
           </div>
         </div>
       </div>

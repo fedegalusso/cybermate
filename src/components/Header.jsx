@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useLanguage } from '../context/LanguageContext';
-import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from "../context/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 import "./Header.css";
 
 const Header = () => {
@@ -30,28 +30,28 @@ const Header = () => {
 
           <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
             <a href="#home" onClick={() => scrollToSection("home")}>
-              {t('nav.home')}
+              {t("nav.home")}
             </a>
             <a href="#features" onClick={() => scrollToSection("features")}>
-              {t('nav.features')}
+              {t("nav.features")}
             </a>
             <a
               href="#how-it-works"
               onClick={() => scrollToSection("how-it-works")}
             >
-              {t('nav.howItWorks')}
+              {t("nav.howItWorks")}
             </a>
             <a href="#team" onClick={() => scrollToSection("team")}>
-              {t('nav.team')}
+              {t("nav.team")}
             </a>
             <a href="#contact" onClick={() => scrollToSection("contact")}>
-              {t('nav.contact')}
+              {t("nav.contact")}
             </a>
           </nav>
 
           <div className="nav-actions">
             <LanguageSwitcher />
-            <button className="btn btn-primary">{t('nav.getStarted')}</button>
+            <button className="btn btn-primary">{t("nav.getStarted")}</button>
             <button
               className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
               onClick={toggleMenu}
